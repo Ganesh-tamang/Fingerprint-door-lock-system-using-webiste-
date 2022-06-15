@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --textColor:rgb(247, 185, 80);
+}
+body{
+    background-color: black;
+    color:var(--textColor);
+}
+.flex{
+    display: flex;
+}
+.cover_image{
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%);
+}
+
+.form_contain{
+   padding-top: 40px;
+}
+.form{
+    width:100%;
+    padding: 20px;
+    font-size: 30px;
+}
+.form label{
+    width:100%;
+    margin:20px 20px;
+}
+.form input{
+    width:80%;
+    margin-right:19%;
+    height: 35px;
+    font-size: 20px;
+    padding: 10px;
+}
+.form .submit_button{
+    width:30%;
+    margin: 20px auto;
+    background-color: rgb(21, 192, 21);
+    color: #dddddd;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.message_container{
+    opacity: 0.92;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(3, 2, 2); 
+}
+.message_box{
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left:10%;
+    right:20%;
+    bottom: 10%;
+
+    border:3px solid green;
+    
+    background-image: url("../access/image/fingerscan.gif");
+    background-repeat:repeat-x;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.message_h2{
+    font-size: clamp(3rem, 2rem,1rem );
+    color:rgb(255, 174, 0);
+    position: absolute;
+    bottom: auto;
+    left: 40px;
+    top: 60%;
+    right: auto;
+}
+.message_body{
+    font-size: 30px;
+    color: white;
+}
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+@media (max-width:780px){
+    .cover_image{
+        width: 1%;
+        position: absolute;
+    }
+    .flex{
+        display: block;
+    }
+    .form input{
+        width:80%;
+        margin-right:19%;
+        height: 35px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .form .submit_button{
+        width:15%;
+        margin: 20px auto;
+        background-color: rgb(21, 192, 21);
+        color: #dddddd;
+        text-align: center;
+    }
+}
